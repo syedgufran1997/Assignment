@@ -20,7 +20,7 @@ html {
 }
 .heading span {
   padding-bottom: 5px;
-  border-bottom: 2px solid tomato;
+  border-bottom: 2px solid #ea4335;
 }
 .heading p {
   font-size: xx-small;
@@ -50,7 +50,7 @@ html {
 
 .google i {
   padding: 10px;
-  color: red;
+  /* color: red; */
   box-shadow: 0px 0px 3px 1.5px lightgray;
   border-radius: 5px;
   margin-left: 1.5rem;
@@ -59,12 +59,24 @@ html {
 .google i:hover {
   box-shadow: none;
 }
-
+.fa-google {
+  background: conic-gradient(
+      from -45deg,
+      #ea4335 110deg,
+      #4285f4 90deg 180deg,
+      #34a853 180deg 270deg,
+      #fbbc05 270deg
+    )
+    73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 .continue p {
   width: 100%;
   text-align: center;
   border-bottom: 0.1px solid lightgrey;
-  /* background-image: radial-gradient(lightgray, grey, lightgray); */
   line-height: 0.1em;
   margin: 25px 0;
 }
@@ -89,9 +101,10 @@ html {
 .email input,
 .password input {
   border-style: none;
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 5px;
   margin-bottom: 8px;
+  outline: none;
 }
 .bottom p {
   font-size: 10px;
@@ -121,6 +134,6 @@ html {
   margin-top: 1rem;
 }
 .bottom span {
-  color: tomato;
+  color: #ea4335;
   font-weight: 800;
 }
